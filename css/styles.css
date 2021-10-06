@@ -1,0 +1,94 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-blue: hsla(241, 26%, 48%, 0.568);
+    --clr-bg: rgb(25, 12, 41);
+    --clr-black: hsl(0, 0%, 10%);
+    --clr-coral: hsl(16, 100%, 66%);
+    --clr-salmon: hsl(6, 93%, 71%);
+}
+body{
+height: 100vh;
+background-color: var(--clr-bg);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*=============Hero===========*/
+/*img{
+width: 100%;
+}*/
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25, 12, 41);
+}
+
+.slider {
+    position: relative;
+    width: 45vw;
+    overflow: hidden;
+}
+
+.imgs {
+    display: flex;
+    width: 100%;
+}
+
+.imgs img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.imgs input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: all 0.15 ease;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.dots label:hover {
+    background: #fff;
+}
+
+#bg-1:checked ~ .bg1 {
+    margin-left: 0;
+}
+
+#bg-2:checked ~ .bg2 {
+    margin-left: -100%;
+}
+
+#bg-3:checked ~ .bg3 {
+    margin-left: -200%;
+}
+
+#bg-4:checked ~ .bg4 {
+    margin-left: -300%;
+}
+
+#bg-5:checked ~ .bg5 {
+    margin-left: -400%;
+}
